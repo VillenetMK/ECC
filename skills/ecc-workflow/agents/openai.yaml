@@ -1,0 +1,14 @@
+interface:
+  display_name: ECC adaptado
+  short_description: Planificar, implementar, revisar y verificar código
+  default_prompt: Usa $ecc-workflow para resolver esta tarea con revisión y verificación
+    proporcionales a su impacto.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

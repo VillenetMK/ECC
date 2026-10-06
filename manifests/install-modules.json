@@ -280,6 +280,21 @@
       "stability": "stable"
     },
     {
+      "id": "skill-ecc-workflow",
+      "kind": "skills",
+      "description": "Standalone ECC workflow for ChatGPT Work Mode and Codex; no hook or runtime dependency.",
+      "paths": [
+        "skills/ecc-workflow"
+      ],
+      "targets": [
+        "codex"
+      ],
+      "dependencies": [],
+      "defaultInstall": false,
+      "cost": "light",
+      "stability": "beta"
+    },
+    {
       "id": "skill-unified-memory",
       "kind": "skills",
       "description": "Single-skill unified-memory guidance; requires the separately installed ecc-universal CLI runtime.",

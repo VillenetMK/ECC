@@ -106,6 +106,7 @@ function buildExpectedPublishPaths(repoRoot) {
     "assets/hero.png",
     "assets/images/community",
     "docs/CODEX-NAVIGATION-GUIDE.md",
+    "docs/work-mode.md",
     "docs/COMMAND-AGENT-MAP.md",
     "docs/ROADMAP.md",
     "docs/design/ecc-memory-vault.md",
@@ -174,6 +175,9 @@ function main() {
       const packagedPaths = new Set(packEntry?.files?.map((file) => file.path) ?? [])
 
       for (const requiredPath of [
+        "docs/work-mode.md",
+        "skills/ecc-workflow/SKILL.md",
+        "skills/ecc-workflow/references/sources-and-license.md",
         "scripts/eval-harness.js",
         "scripts/lib/eval-harness/index.js",
         "examples/eval-harness/run-example.js",

@@ -1,6 +1,22 @@
 <p align="center">
   <img src="assets/hero.png" alt="ECC - the agent harness operating system" width="100%" />
 </p>
+# ECC adaptado para ChatGPT Work Mode y Codex
+
+Este es el fork **VillenetMK/ECC**, basado en ECC 2.2.3 de Affaan Mustafa.
+Conserva el proyecto original y añade una adaptación selectiva en español:
+[`skills/ecc-workflow`](skills/ecc-workflow/SKILL.md), con módulos de exploración,
+planificación, implementación, depuración, revisión, verificación y continuidad.
+
+**Empieza por la [guía de uso de este fork](docs/work-mode.md).** La skill funciona
+como procedimiento y no instala hooks, MCP, observadores ni registros de conversaciones.
+El fork también corrige el filtrado de claves de API en el registro de comandos Bash.
+
+No es una distribución oficial ni una conversión completa del catálogo de ECC.
+Los comandos npm y marketplace que aparecen en la documentación original de abajo
+instalan el proyecto upstream; **no incluyen automáticamente los cambios de este fork**.
+
+---
 
 <p align="center">
   <a href="https://www.star-history.com/affaan-m/ecc">
@@ -139,12 +155,12 @@ Instead of rebuilding that process in every prompt, you install it once and make
 
 ECC is MIT-licensed open source. It works best with Claude Code today, has a supported Codex sync path, and provides capability-limited adapters for Cursor, OpenCode, Gemini, Zed, GitHub Copilot, Antigravity, Qwen, and other harnesses. See the [support status matrix](#platform-support) before assuming feature parity.
 
-Access to 68 agents, 293 skills, and 94 legacy command shims, plus hooks, rules, memory, continuous learning, and AgentShield security scanning. The agents are specialized for planning, review, build repair, security, architecture, and domain work.
+Access to 68 agents, 294 skills, and 94 legacy command shims, plus hooks, rules, memory, continuous learning, and AgentShield security scanning. The agents are specialized for planning, review, build repair, security, architecture, and domain work.
 
 | Included         |       Count | What it gives you                                                                    |
 | ---------------- | ----------: | ------------------------------------------------------------------------------------ |
 | Agents           |   68 agents | Planning, review, build repair, security, architecture, and domain work              |
-| Skills           |  293 skills | TDD, research, security, docs, frontend, data, ML, operations, and more              |
+| Skills           |  294 skills | TDD, research, security, docs, frontend, data, ML, operations, and more              |
 | Commands         | 94 commands | Convenient entry points while ECC moves to a skills-first surface                    |
 | Hooks and memory |     Runtime | Enforcement, session summaries, continuous learning, instincts, and context controls |
 | Rules            |   Selective | Always-loaded standards you choose by language or project                            |
